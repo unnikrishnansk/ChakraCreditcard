@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+
+import { Button } from '@chakra-ui/react';
 import './App.css';
+import Creditcard from './components/Creditcard';
+import Form from './components/Form';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        <div>
+        <Creditcard />
+        </div>
+        <div>
+        <Form />
+        <Button colorScheme='pink' height='35px'
+  width='150px' marginLeft='120px' marginTop='30px' size='md'>
+    PAY
+  </Button>
+        </div>
+      
+     
+     
     </div>
   );
 }
